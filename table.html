@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Table Booking</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.booking{
+max-width:500px;
+margin:40px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+.booking h2{
+text-align:center;
+color:#8B0000;
+margin-bottom:20px;
+}
+
+.booking input,
+.booking select,
+.booking textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.booking button{
+width:100%;
+padding:12px;
+background:#8B0000;
+color:white;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+}
+
+.booking button:hover{
+background:#b22222;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">🍽 Savery Bite 
+  
+  Restaurant</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">VIP Booking</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="booking">
+
+<h2>👑 VIP Table Booking</h2>
+
+<form onsubmit="bookTable(event)">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="date" required>
+
+<input type="time" required>
+
+<select required>
+<option value="">Select Guests</option>
+<option>2 Guests</option>
+<option>4 Guests</option>
+<option>6 Guests</option>
+<option>8 Guests</option>
+<option>10+ Guests</option>
+</select>
+
+<textarea rows="4" placeholder="Special Request"></textarea>
+
+<button type="submit">Book VIP Table</button>
+
+</form>
+
+</div>
+
+<footer>
+<p>© 2026 Royal Restaurant | All Rights Reserved</p>
+</footer>
+
+<script>
+function bookTable(event){
+event.preventDefault();
+alert("🎉 Your VIP Table has been booked successfully!");
+}
+</script>
+
+</body>
+</html>
+
+
